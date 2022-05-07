@@ -37,8 +37,9 @@ public class DisplayProduct {
 	}
 	
 	@GetMapping
-	public String showDesignForm(Model model) {
-		model.addAttribute("taco", new Taco());
+	public String showProduct(Model model) {
+		//model.addAttribute("product", new Product());
 		return "display";
 	}
+	
 }
