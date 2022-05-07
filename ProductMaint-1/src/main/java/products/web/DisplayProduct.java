@@ -32,9 +32,18 @@ public class DisplayProduct {
 		productRepo.findAll().forEach(products::add);
 	}
 	
+<<<<<<< HEAD
 	@GetMapping("/products")
 	public String products_index() {
 		return "products";
 	}
 
+=======
+	@GetMapping
+	public String showProduct(Model model) {
+		//model.addAttribute("product", new Product());
+		return "display";
+	}
+	
+>>>>>>> 68085ef928439a96541579085068cf7b40670b30
 }
